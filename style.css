@@ -1,0 +1,149 @@
+:root {
+    --primary-color: #004dda;
+    --dark: #5a5a5f;
+    --light: #fff;
+    --grey: #c4c4c4;
+    --default-pad: 2.5rem;
+    --medium-pad: calc(var(--default-pad) / 2);
+    --small-pad: calc(var(--medium-pad) / 2);
+}
+
+html {
+    height: 100%;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    color: var(--dark);
+    display: flex;
+    background-color: #ccc;
+    min-height: 100%;
+}
+
+.topnav-menu, .menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.topnav-menu li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.menus {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu {
+    padding: var(--default-pad);
+}
+
+.menus li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.menus .menu:first-child {
+    border-bottom: 1px solid var(--grey);
+}
+
+.menus .menu:last-child {
+    position: fixed;
+    left: var(--small-pad);
+    bottom: var(--small-pad);
+}
+
+.mainnav {
+    padding: var(--medium-pad) 0 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light);
+}
+
+.mainnav > a {
+    padding-left: var(--default-pad);
+    color: black;
+    text-decoration: none;
+    font-weight: 1000;
+}
+
+.main-contant {
+    flex-grow: 1;
+}
+
+.topnav {
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--medium-pad) var(--default-pad);
+}
+
+.topnav-menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+.link {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+main {
+    padding: var(--default-pad);
+    display: flex;
+    flex-direction: column;
+    gap: var(--default-pad);
+}
+
+.sumary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--default-pad);
+    background-color: var(--light);
+}
+
+.separete {
+    width: 1px;
+    border-left: 1px solid #c7c6c6;
+    align-self: stretch;
+}
+
+.number {
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 0 .5rem;
+}
+
+img {
+    width: 100%;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: var(--light);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: var(--small-pad) var(--medium-pad);
+}
+
+.charts {
+    display: flex;
+    gap: var(--default-pad);
+}
+
+.chart {
+    flex-grow: 1;
+}
